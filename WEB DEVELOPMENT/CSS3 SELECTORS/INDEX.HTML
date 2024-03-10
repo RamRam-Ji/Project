@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR</title>
+    <STYle>
+        /* CLASS SELECTOR*/
+       .RED{
+            color: red;
+        }
+        /* ID SELECTOR*/
+        #GREEN{
+            color: rgba(27, 247, 27, 0.902);
+        }
+        /* CHILD SELECTOR*/
+        DIV > P{
+            color: aqua;
+            background-color: darkgray;
+        }
+        /*DESECEDENT SELECTOR*/
+        DIV B{
+            color:white;
+            background-color:black;
+        }
+        /* UNIVERSAL SELECTER
+        *{
+            margin: 0;
+        }
+        */
+        /*PSEUDO SELECTOR*/
+        a:visited{
+            color: black;
+        }
+        a:link{
+            color: rgb(244, 22, 22);
+        }
+        a:active{
+            background-color: darkorange;
+        }
+        a:hover{
+            background-color: blue;
+        }
+
+
+    </STYle>
+</head>
+<body>
+    <DIV class="RED">
+        THIS IS CSS SELECTOR
+    </DIV>
+    <DIV  CLASS="RED"id="GREEN">
+        THIS IS ALSO RED
+        <p>I AM PARAGRAPH</p>
+    </DIV>
+    <DIV>
+            <TT>
+                <P><B>THIS IS AN ANOTHER PARAGRAPH </B></P>
+            </TT>
+    </DIV>
+    <A href="https://www.google.com">Google</A>
+    <div>
+    <A href="https://www.facebook.com">Facebook</A>
+    </div>
+</body>
+</html>

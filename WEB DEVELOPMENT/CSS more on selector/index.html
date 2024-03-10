@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style> 
+    .boxes *{
+        border:2px solid black ;
+    }
+        /*.box:first-child {
+            background-color: aquamarine;
+        }*/
+        /*.box:first-line{
+            color: blue;
+        }*/
+        /*.boxes *{
+            color: brown;
+        }*/
+        p, .box,[data-color="primary"]{
+            padding-top: 40px;
+        }
+        .box:nth-child(odd){
+            color: blue;
+        }
+        .box:nth-last-child(1){
+            color: red;
+        }
+        .boxes::after{
+            content: "i am good";
+            border: 2px solid black;
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: rgb(248, 83, 12);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempore corporis hic
+            voluptates adipisci dolorem nulla qui! Accusamus inventore, cum ut saepe necessitatibus asperiores error
+            adipisci, enim maxime, unde autem.</div>
+        <div  class="box">hey i am box</div>
+        <div class="box">hey i am box</div>
+        <div class="box">hey i am box</div>
+    </div>
+</body>
+
+</html>

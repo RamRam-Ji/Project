@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style> 
+        .container {
+            width: 50vw;
+            height: 40vh;
+            background-color: aquamarine;
+        }
+
+        .box {
+            width: 5vw;
+            height: 4vh;
+            background-color: rgb(5, 74, 51); 
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 0.5s;
+        }
+        .transform{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box transform">
+
+        </div>
+    </div>
+</body>
+
+</html>
